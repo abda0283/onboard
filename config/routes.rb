@@ -10,6 +10,12 @@ Onboard::Application.routes.draw do
 
   resources :users
 
+
+  # log in and log out of our site
+  # its a singular resource because we can only do one session
+
+  resource :session
+
   # go to the home page
   root "rooms#index"
 

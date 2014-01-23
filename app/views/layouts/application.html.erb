@@ -32,14 +32,14 @@
       <%= link_to "Dashboard", "#" %>
       <%= link_to "Add a room", new_room_path %>
       <%= link_to "Orders", "#" %>
-      <%= link_to "Log out", "#" %>
+      <%= link_to "Log out", session_path, method: :delete %>
 
 
       <% else %>
       
       <!-- if there is not a current user show this  -->
       <%= link_to "Sign up", new_user_path %>
-      <%= link_to "Sign in", "#" %>
+      <%= link_to "Sign in", new_session_path %>
 
       <% end %>
       
