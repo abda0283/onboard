@@ -1,0 +1,19 @@
+<h1>Rooms#show</h1>
+<p>Find me in app/views/rooms/show.html.erb</p>
+
+
+<h2><%= @room.title%></h2>
+
+<p><%= @room.address%></p>
+
+<p><%= @room.latitude%> <%=@room.longitude %></p>
+
+
+<div class="actions">
+	<%= link_to "edit", edit_room_path(@room), class: "button" %>
+
+	<%= link_to "delete", room_path(@room), method: :delete, class: "button", confirm: "are you sure?"%>
+
+</div>
+
+
