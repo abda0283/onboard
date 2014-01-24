@@ -1,8 +1,12 @@
 <h1>Rooms#show</h1>
-<p>Find me in app/views/rooms/show.html.erb</p>
-
+<!-- <p>Find me in app/views/rooms/show.html.erb</p>
+ -->
 
 <h2><%= @room.title%></h2>
+
+<%= image_tag @room.image(:large) %>
+
+
 
 <p><%= @room.address%></p>
 
