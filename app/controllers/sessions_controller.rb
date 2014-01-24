@@ -27,7 +27,7 @@ class SessionsController < ApplicationController
 
 		# if there is user, and then check the passwor aswell
 
-		if @user.present? and @user.authenticate(@password)
+		if @user.present? and @user.provider.nil? and @user.authenticate(@password)
 
 			# if it matches give them the session
 

@@ -86,6 +86,7 @@ gem 'omniauth-twitter'
 
 gem 'omniauth-linkedin'
 
+
 # add in activeadmin
 
 gem 'activeadmin', github: "gregbell/active_admin"

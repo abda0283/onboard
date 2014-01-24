@@ -17,11 +17,12 @@ class User < ActiveRecord::Base
 
 	#  validations
 
-	validates :name, presence: true
-	
-	validates :username, presence: true, uniqueness: true
+			validates :name, presence: true
+			
+			validates :username, presence: true, uniqueness: true
 
-	validates :email, presence: true, uniqueness: true
+			validates :email, presence: true, uniqueness: true,	if: -> { provider.nil? }
+
 
 
 

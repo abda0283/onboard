@@ -1,5 +1,14 @@
 Onboard::Application.routes.draw do
 
+
+  # the urls we need for omniauth
+
+  get "auth/:provider/callback" => "social_logins#create"
+
+  get "auth/:provider/failure" => "social_logins#failure"
+
+  
+
   
 
   # has to match with your controllers
