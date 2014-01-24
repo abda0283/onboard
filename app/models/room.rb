@@ -1,5 +1,9 @@
 class Room < ActiveRecord::Base
 
+
+	# association
+	belongs_to :user
+
 	# this is fron the rubygeocoder.org site
 
 	geocoded_by :address

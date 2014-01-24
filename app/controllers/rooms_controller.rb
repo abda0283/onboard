@@ -1,4 +1,11 @@
 class RoomsController < ApplicationController
+
+
+
+	#  before quite a few of the actions below
+	#  makesure we're logged in
+
+	before_action :make_sure_logged_in, except: [:index, :show]
 	  
 
 
@@ -26,7 +33,7 @@ class RoomsController < ApplicationController
 
 	  def new
 
-	  	@room = Room.new
+	  	@room = current_user.rooms.new
 	  
 
 	  end
@@ -35,7 +42,7 @@ class RoomsController < ApplicationController
 	
 	  def create
 
-		  	@room = Room.new(room_params)
+		  	@room = current_user.rooms.new(room_params)
 
 		  	if @room.save
 
@@ -59,7 +66,7 @@ class RoomsController < ApplicationController
 
 	  def edit
 
-	  	@room = Room.find(params[:id])
+	  	@room = current_user.rooms.find(params[:id])
 	  
 
 	  end
@@ -68,7 +75,7 @@ class RoomsController < ApplicationController
 
 	  def update
 
-	  	@room = Room.find(params[:id])
+	  	@room = current_user.rooms.find(params[:id])
 
 	  	if @room.update(room_params)
 

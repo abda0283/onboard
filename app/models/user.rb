@@ -1,6 +1,10 @@
 class User < ActiveRecord::Base
 
 
+	#  associatations
+	has_many :rooms
+
+
 	# built into rails 3.2 , 4, for handling passwords
 	
 	has_secure_password
