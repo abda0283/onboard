@@ -1,21 +1,30 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  title: MyString
+AbsTestData:
+  title: TestData
   address: MyString
-  description: MyText
-  latitude: 1.5
-  longitude: 1.5
-  bedrooms: 1
-  max_guest: 1
-  price: 1.5
+  description: codeschool
+  latitude: 51.54
+  longitude: -0.105
+  bedrooms: 3
+  max_guest: 6
+  price: 3.0
 
-two:
-  title: MyString
-  address: MyString
-  description: MyText
-  latitude: 1.5
-  longitude: 1.5
-  bedrooms: 1
-  max_guest: 1
-  price: 1.5
+Riks:
+  title: MyString house
+  address: MyString road
+  description: MyText invite
+  latitude: 51.45
+  longitude: -0.240
+  bedrooms: 2
+  max_guest: 4
+  price: 25
+
+to_geocode:
+  title: Hummus bedrooms
+  address: Exmouth Market, london
+  price: 2
+  
+
+
+

@@ -8,9 +8,14 @@
 
 
 
-<p><%= @room.address%></p>
+<p><%= @room.address %></p>
 
-<p><%= @room.latitude%> <%=@room.longitude %></p>
+<p><%= @room.latitude %> <%= @room.longitude %></p>
+
+
+<div class="map" data-lat="<%= @room.latitude %>" data-lng="<%= @room.longitude %>"></div>
+
+<!-- show the map below the  -->
 
 
 <% if current_user.present? %>

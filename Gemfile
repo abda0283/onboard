@@ -92,6 +92,20 @@ gem 'omniauth-linkedin'
 gem 'activeadmin', github: "gregbell/active_admin"
 
 
+# testing gems - developement productions and test
+
+group :test do
+
+	gem 'minitest'
+
+	gem 'capybara'
+
+	gem 'minitest-rails'
+
+end
+
+
+
 
 
 

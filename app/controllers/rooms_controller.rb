@@ -11,7 +11,11 @@ class RoomsController < ApplicationController
 
 	  def index
 
-	  	@rooms = Room.near("London")
+	  	if params[:location].present?
+	  		@rooms = Room.near(params[:location])
+	  	else
+	  		@rooms = Room.near("London")
+	  	end
 	  	# room.near("london") , will only show those near london
 
 
