@@ -1,8 +1,9 @@
 class Room < ActiveRecord::Base
 
 
-	# association
+	# association - creates relationships between tables
 	belongs_to :user
+	has_many :orders
 
 	# this is fron the rubygeocoder.org site
 

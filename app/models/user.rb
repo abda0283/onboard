@@ -4,6 +4,8 @@ class User < ActiveRecord::Base
 	#  associatations
 	has_many :rooms
 
+	has_many :orders
+
 
 	# built into rails 3.2 , 4, for handling passwords
 	
